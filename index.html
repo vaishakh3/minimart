@@ -89,6 +89,13 @@ section{padding:44px 0}
 .box-list li{display:flex;gap:10px;align-items:center}
 .box-list svg{width:15px;height:15px;stroke:var(--accent);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
+/* pay */
+.pay-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:36px;align-items:start}
+.pay-qr img{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--radius)}
+.pay-steps{margin:16px 0 0 18px;font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:8px}
+.pay-steps strong{color:var(--text);font-weight:600}
+@media (max-width:900px){.pay-card{grid-template-columns:1fr}.pay-qr{max-width:320px}}
+
 /* specs */
 .specs{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
 .spec-row{display:grid;grid-template-columns:220px 1fr;padding:15px 24px;border-bottom:1px solid var(--border);font-size:14px}
@@ -124,6 +131,7 @@ footer a{color:var(--muted)}
       <a href="#highlights">Highlights</a>
       <a href="#deal">Price</a>
       <a href="#specs">Specs</a>
+      <a href="#pay">Pay</a>
     </nav>
     <a class="nav-price" href="#deal">₹23,500</a>
   </div>
@@ -142,7 +150,7 @@ footer a{color:var(--muted)}
         <span class="save">You save 66%</span>
       </div>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#deal">
+        <a class="btn btn-primary" href="#pay">
           Buy now
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -209,7 +217,7 @@ footer a{color:var(--muted)}
         </div>
         <p class="deal-note">One unit available. Battery, cameras, Face ID, buttons and ports all tested and working.</p>
         <div class="cta-row" style="margin-top:20px">
-          <a class="btn btn-primary" href="mailto:?subject=iPhone%2013%20mini%20%E2%80%94%20%E2%82%B923%2C500">Reserve it now</a>
+          <a class="btn btn-primary" href="#pay">Reserve it now</a>
         </div>
       </div>
       <div>
@@ -220,6 +228,32 @@ footer a{color:var(--muted)}
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Fresh screen protector, fitted</li>
           <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Freshly reset — ready for your Apple ID</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="pay">
+    <h2 class="sec-title">Pay with UPI</h2>
+    <p class="sec-sub">Scan with GPay, PhonePe, Paytm or any UPI app. No fees, instant confirmation.</p>
+    <div class="pay-card">
+      <div class="pay-qr">
+        <img src="images/upi-qr.png" alt="UPI QR code for payment" width="480" height="480">
+      </div>
+      <div class="pay-detail">
+        <div class="deal-lines">
+          <div class="deal-line"><span>Amount</span><span>₹23,500</span></div>
+          <div class="deal-line"><span>UPI ID</span><span style="font-family:ui-monospace,monospace">vichured@okaxis</span></div>
+          <div class="deal-line"><span>Payee</span><span>Vaishakh Suresh</span></div>
+        </div>
+        <ol class="pay-steps">
+          <li>Open any UPI app and scan the QR code.</li>
+          <li>Enter <strong>₹23,500</strong> if the amount isn't prefilled.</li>
+          <li>Check the payee name reads <strong>Vaishakh Suresh</strong>, then pay.</li>
+        </ol>
+        <div class="cta-row" style="margin-top:18px">
+          <a class="btn btn-primary" href="upi://pay?pa=vichured@okaxis&amp;pn=Vaishakh%20Suresh&amp;am=23500&amp;cu=INR&amp;tn=iPhone%2013%20mini">Open in UPI app</a>
+        </div>
+        <p class="deal-note" style="margin-top:14px">On mobile, the button above opens your UPI app with the amount prefilled.</p>
       </div>
     </div>
   </section>
