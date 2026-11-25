@@ -1,1 +1,3 @@
 *.log
+qa-*.png
+qa.py
