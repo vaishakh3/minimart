@@ -3,156 +3,158 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>iPhone 13 mini — ₹23,500</title>
+<title>iPhone 13 mini — ₹23,500 | minimart</title>
 <meta name="description" content="iPhone 13 mini in excellent pre-owned condition. 128 GB, A15 Bionic, dual camera. Now ₹23,500 with UPI payment.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#eff1ed;
-  --surface:#ffffff;
-  --text:#1b1f1c;
-  --muted:rgba(27,31,28,.56);
-  --border:rgba(27,31,28,.12);
-  --accent:#2f6b4f;
+  --bg:#ffffff;
+  --alt:#f5f5f7;
+  --text:#1d1d1f;
+  --muted:#6e6e73;
+  --border:#d2d2d7;
+  --hairline:rgba(0,0,0,.08);
+  --accent:#0071e3;
+  --accent-hover:#0077ed;
   --accent-fg:#ffffff;
-  --amber:#8a6d1d;
-  --amber-bg:rgba(138,109,29,.1);
-  --radius:12px;
-  --font:'Inter',system-ui,sans-serif;
-  --serif:'Newsreader',Georgia,serif;
+  --radius:18px;
+  --font:'Inter',-apple-system,system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 a{color:inherit}
 img{max-width:100%}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+::selection{background:rgba(0,113,227,.15)}
 
 /* header */
-header{position:sticky;top:0;background:rgba(239,241,237,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:20}
-.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
-.wordmark{font-weight:700;letter-spacing:-.02em;font-size:17px}
+header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--hairline);z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;height:56px}
+.wordmark{font-weight:800;letter-spacing:-.02em;font-size:19px}
 .wordmark span{color:var(--accent)}
-.nav-links{display:flex;gap:24px;font-size:13.5px;color:var(--muted)}
+.nav-links{display:flex;gap:28px;font-size:13px;color:var(--muted)}
 .nav-links a{text-decoration:none;transition:color .15s}
 .nav-links a:hover{color:var(--text)}
-.nav-links a.active{color:var(--accent);font-weight:600}
-.nav-price{font-size:13.5px;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:5px 13px;text-decoration:none}
+.nav-links a.active{color:var(--text);font-weight:600}
+.nav-price{font-size:13px;font-weight:600;color:var(--accent-fg);background:var(--accent);border-radius:999px;padding:6px 14px;text-decoration:none}
+.nav-price:hover{background:var(--accent-hover)}
 
 /* product detail */
-.pdp{display:grid;grid-template-columns:7fr 5fr;gap:44px;padding:40px 0 56px;align-items:start}
-.gallery{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px 24px;display:flex;flex-direction:column;align-items:center;position:sticky;top:84px}
-.phone-frame{width:100%;max-width:520px;overflow:hidden;border-radius:14px}
-.phone-img{width:100%;height:auto;display:block;transition:opacity .18s ease,transform .3s ease}
-.phone-frame:hover .phone-img{transform:scale(1.025)}
+.pdp{display:grid;grid-template-columns:7fr 5fr;gap:56px;padding:48px 0 64px;align-items:start}
+.gallery{background:var(--alt);border-radius:28px;padding:36px 32px;display:flex;flex-direction:column;align-items:center;position:sticky;top:80px}
+.phone-frame{width:100%;max-width:560px;overflow:hidden;border-radius:16px}
+.phone-img{width:100%;height:auto;display:block;transition:opacity .18s ease,transform .35s ease}
+.phone-frame:hover .phone-img{transform:scale(1.03)}
 .phone-img.switching{opacity:0}
-.gallery-note{margin-top:14px;font-size:12.5px;color:var(--muted)}
+.gallery-note{margin-top:16px;font-size:12px;color:var(--muted);letter-spacing:.01em}
 
-.buy-panel{position:sticky;top:84px}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-.chip{font-size:12px;font-weight:600;letter-spacing:.04em;padding:5px 11px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
-.chip-accent{color:var(--accent);border-color:rgba(47,107,79,.4);background:rgba(47,107,79,.07)}
-.chip-amber{color:var(--amber);border-color:rgba(138,109,29,.4);background:var(--amber-bg)}
-h1{font-size:44px;line-height:1.06;letter-spacing:-.03em;font-weight:700}
-h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent)}
-.variant-line{margin-top:8px;font-size:14px;color:var(--muted)}
-.hero-sub{margin-top:16px;color:var(--muted);font-size:15.5px;max-width:46ch}
+.buy-panel{position:sticky;top:80px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.chip{font-size:12px;font-weight:600;letter-spacing:.02em;padding:6px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+.chip-accent{color:var(--accent);border-color:rgba(0,113,227,.35);background:rgba(0,113,227,.06)}
+.chip-amber{color:#a05a00;border-color:rgba(160,90,0,.35);background:rgba(160,90,0,.06)}
+h1{font-size:52px;line-height:1.02;letter-spacing:-.035em;font-weight:800}
+.variant-line{margin-top:10px;font-size:15px;color:var(--muted)}
+.hero-sub{margin-top:18px;color:var(--muted);font-size:16px;max-width:46ch}
 
-.price-block{margin-top:22px;padding:20px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.price-block{margin-top:24px;padding:22px 0;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
 .price-row{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-.price{font-size:38px;font-weight:700;letter-spacing:-.02em}
+.price{font-size:42px;font-weight:800;letter-spacing:-.03em}
 .mrp{font-size:16px;color:var(--muted);text-decoration:line-through}
-.save{font-size:12.5px;font-weight:600;color:var(--accent);background:rgba(47,107,79,.1);padding:4px 10px;border-radius:999px}
+.save{font-size:12.5px;font-weight:600;color:var(--accent);background:rgba(0,113,227,.08);padding:4px 10px;border-radius:999px}
 .price-note{margin-top:8px;font-size:13px;color:var(--muted)}
 
-.opt-label{margin-top:22px;font-size:13px;font-weight:600;letter-spacing:.02em}
+.opt-label{margin-top:24px;font-size:13px;font-weight:600}
 .opt-label span{font-weight:400;color:var(--muted)}
-.swatches{display:flex;gap:10px;margin-top:10px}
-.swatch{width:30px;height:30px;border-radius:50%;border:1px solid var(--border);cursor:pointer;padding:0;transition:transform .12s}
-.swatch:hover{transform:scale(1.08)}
-.swatch[aria-pressed="true"]{box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px var(--accent)}
+.swatches{display:flex;gap:12px;margin-top:12px}
+.swatch{width:32px;height:32px;border-radius:50%;border:1px solid var(--hairline);cursor:pointer;padding:0;transition:transform .12s}
+.swatch:hover{transform:scale(1.1)}
+.swatch[aria-pressed="true"]{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--accent)}
 
-.cta-row{margin-top:26px;display:flex;flex-direction:column;gap:10px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:600;text-decoration:none;border-radius:999px;padding:14px 26px;border:1px solid transparent;cursor:pointer;transition:filter .15s,border-color .15s}
+.cta-row{margin-top:28px;display:flex;flex-direction:column;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:16px;font-weight:600;text-decoration:none;border-radius:999px;padding:15px 28px;border:1px solid transparent;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
 .btn-primary{background:var(--accent);color:var(--accent-fg)}
-.btn-primary:hover{filter:brightness(1.08)}
-.btn-ghost{background:transparent;color:var(--text);border-color:var(--border)}
-.btn-ghost:hover{border-color:var(--text)}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-ghost{background:transparent;color:var(--accent);border-color:var(--border)}
+.btn-ghost:hover{border-color:var(--accent)}
 
-.assurance{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;font-size:13px;color:var(--muted)}
+.assurance{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;font-size:13px;color:var(--muted)}
 .assurance span{display:inline-flex;align-items:center;gap:8px}
 .assurance svg{width:16px;height:16px;stroke:var(--accent);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
 /* sections */
-section{padding:44px 0;scroll-margin-top:80px}
-.sec-title{font-size:26px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
-.sec-sub{color:var(--muted);font-size:15px;margin-bottom:26px}
+section{padding:56px 0;scroll-margin-top:72px}
+.sec-title{font-size:32px;font-weight:800;letter-spacing:-.025em;margin-bottom:8px}
+.sec-sub{color:var(--muted);font-size:16px;margin-bottom:30px}
 
-.highlights{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border)}
-.hl{padding:22px 18px 22px 0;border-right:1px solid var(--border)}
+.highlights{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hairline)}
+.hl{padding:26px 20px 26px 0;border-right:1px solid var(--hairline)}
 .hl:last-child{border-right:none}
-.hl svg{width:22px;height:22px;stroke:var(--accent);stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round;display:block;margin-bottom:12px}
-.hl h3{font-size:15px;font-weight:600;margin-bottom:4px}
+.hl svg{width:24px;height:24px;stroke:var(--accent);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;display:block;margin-bottom:14px}
+.hl h3{font-size:15px;font-weight:700;margin-bottom:5px}
 .hl p{font-size:13px;color:var(--muted)}
 
 /* deal */
-.deal{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
-.deal h2{font-size:20px;font-weight:700;letter-spacing:-.01em;margin-bottom:14px}
+.deal{background:var(--alt);border-radius:var(--radius);padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.deal h2{font-size:19px;font-weight:700;letter-spacing:-.01em;margin-bottom:16px}
 .deal-lines{display:flex;flex-direction:column}
-.deal-line{display:flex;justify-content:space-between;font-size:14px;padding:10px 0;border-bottom:1px solid var(--border)}
+.deal-line{display:flex;justify-content:space-between;font-size:14px;padding:11px 0;border-bottom:1px solid var(--hairline)}
 .deal-line:last-child{border-bottom:none;font-weight:700;font-size:16px}
 .deal-line span:last-child{font-variant-numeric:tabular-nums}
-.deal-note{font-size:13px;color:var(--muted);margin-top:14px}
-.box-list{list-style:none;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.deal-note{font-size:13px;color:var(--muted);margin-top:16px}
+.box-list{list-style:none;display:flex;flex-direction:column;gap:12px;font-size:14px}
 .box-list li{display:flex;gap:10px;align-items:center}
-.box-list svg{width:15px;height:15px;stroke:var(--accent);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.box-list svg{width:15px;height:15px;stroke:var(--accent);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
 /* pay */
-.pay-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:36px;align-items:start}
-.pay-qr img{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--radius)}
-.pay-steps{margin:16px 0 0 18px;font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:8px}
+.pay-card{background:var(--alt);border-radius:var(--radius);padding:36px;display:grid;grid-template-columns:minmax(240px,320px) 1fr;gap:40px;align-items:start}
+.pay-qr{background:#fff;border-radius:var(--radius);padding:18px;border:1px solid var(--hairline)}
+.pay-qr img{width:100%;height:auto;display:block;border-radius:10px}
+.pay-steps{margin:18px 0 0 18px;font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:10px}
 .pay-steps strong{color:var(--text);font-weight:600}
 
 /* specs */
-.specs{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
-.spec-row{display:grid;grid-template-columns:220px 1fr;padding:15px 24px;border-bottom:1px solid var(--border);font-size:14px}
+.specs{background:var(--alt);border-radius:var(--radius);overflow:hidden}
+.spec-row{display:grid;grid-template-columns:220px 1fr;padding:17px 28px;border-bottom:1px solid var(--hairline);font-size:14px}
 .spec-row:last-child{border-bottom:none}
 .spec-row dt{color:var(--muted);font-weight:500}
 .spec-row dd{font-weight:500}
 
 /* footer */
-footer{border-top:1px solid var(--border);padding:28px 0 40px;font-size:13px;color:var(--muted)}
+footer{border-top:1px solid var(--hairline);padding:30px 0 44px;font-size:12.5px;color:var(--muted)}
 footer a{color:var(--muted)}
+footer a:hover{color:var(--text)}
 
 /* mobile sticky buy bar */
-.buy-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid var(--border);padding:10px 16px calc(10px + env(safe-area-inset-bottom));z-index:30;align-items:center;justify-content:space-between;gap:14px;transform:translateY(110%);transition:transform .25s ease}
+.buy-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid var(--hairline);padding:12px 16px calc(12px + env(safe-area-inset-bottom));z-index:30;align-items:center;justify-content:space-between;gap:14px;transform:translateY(110%);transition:transform .25s ease}
 .buy-bar.show{transform:translateY(0)}
-.buy-bar .bb-price{font-weight:700;font-size:18px;letter-spacing:-.01em}
+.buy-bar .bb-price{font-weight:800;font-size:19px;letter-spacing:-.02em}
 .buy-bar .bb-sub{font-size:11.5px;color:var(--muted)}
-.buy-bar .btn{padding:11px 22px;font-size:14px}
+.buy-bar .btn{padding:12px 24px;font-size:15px}
 
 @media (max-width:960px){
-  .pdp{grid-template-columns:1fr;gap:28px;padding-top:28px}
+  .pdp{grid-template-columns:1fr;gap:32px;padding-top:32px}
   .gallery,.buy-panel{position:static}
-  h1{font-size:34px}
-  .price{font-size:30px}
+  h1{font-size:38px}
+  .price{font-size:34px}
   .highlights{grid-template-columns:repeat(2,1fr)}
   .hl:nth-child(2){border-right:none}
-  .deal{grid-template-columns:1fr}
-  .pay-card{grid-template-columns:1fr}
-  .pay-qr{max-width:320px}
+  .deal{grid-template-columns:1fr;padding:28px}
+  .pay-card{grid-template-columns:1fr;padding:28px}
+  .pay-qr{max-width:300px}
   .nav-links{display:none}
   .buy-bar{display:flex}
-  body{padding-bottom:0}
-  main{padding-bottom:88px}
+  main{padding-bottom:92px}
 }
 @media (max-width:520px){
   .assurance{grid-template-columns:1fr}
   .spec-row{grid-template-columns:1fr;gap:2px}
+  h1{font-size:32px}
 }
 </style>
 </head>
@@ -176,7 +178,7 @@ footer a{color:var(--muted)}
   <div class="pdp">
     <div class="gallery">
       <div class="phone-frame">
-        <img id="phone-img" class="phone-img" src="images/midnight.jpg" alt="iPhone 13 mini in Midnight — front and back view" width="940" height="1112" fetchpriority="high" decoding="async">
+        <img id="phone-img" class="phone-img" src="images/midnight.jpg" alt="iPhone 13 mini in Midnight — front and back view" width="517" height="672" fetchpriority="high" decoding="async">
       </div>
       <p class="gallery-note">Front and back view · <span id="gallery-color">Midnight</span></p>
     </div>
@@ -186,7 +188,7 @@ footer a{color:var(--muted)}
         <span class="chip chip-accent">Pre-owned · Excellent</span>
         <span class="chip chip-amber">Only 1 available</span>
       </div>
-      <h1>iPhone 13 mini.<br><em>Small phone, full flagship.</em></h1>
+      <h1>iPhone 13 mini.</h1>
       <p class="variant-line">128 GB · Factory unlocked</p>
       <p class="hero-sub">The compact 5.4-inch powerhouse with A15 Bionic, a dual camera system and all-day battery — fully tested and ready for its next owner.</p>
 
@@ -293,10 +295,10 @@ footer a{color:var(--muted)}
           <li>Enter <strong>₹23,500</strong> if the amount isn't prefilled.</li>
           <li>Confirm the payee details shown in your app, then pay.</li>
         </ol>
-        <div class="cta-row" style="margin-top:18px;align-items:flex-start">
+        <div class="cta-row" style="margin-top:20px">
           <a class="btn btn-primary" href="upi://pay?pa=vichured@okaxis&amp;pn=Vaishakh%20Suresh&amp;am=23500&amp;cu=INR&amp;tn=iPhone%2013%20mini" style="align-self:flex-start">Open in UPI app</a>
         </div>
-        <p class="deal-note" style="margin-top:14px">On mobile, the button above opens your UPI app with the amount prefilled.</p>
+        <p class="deal-note" style="margin-top:16px">On mobile, the button above opens your UPI app with the amount prefilled.</p>
       </div>
     </div>
   </section>
@@ -374,13 +376,13 @@ const spy = new IntersectionObserver(entries => {
 }, { rootMargin: '-35% 0px -55% 0px' });
 secs.forEach(s => s && spy.observe(s));
 
-// mobile sticky buy bar: show after scrolling past the buy panel CTAs
+// mobile sticky buy bar
 const bar = document.getElementById('buy-bar');
 const panel = document.querySelector('.buy-panel .cta-row');
 const barObs = new IntersectionObserver(([e]) => {
-  const below = e.boundingClientRect.bottom < 0 || (!e.isIntersecting && window.scrollY > 200);
-  bar.classList.toggle('show', below && !e.isIntersecting);
-  bar.setAttribute('aria-hidden', bar.classList.contains('show') ? 'false' : 'true');
+  const below = e.boundingClientRect.bottom < 0;
+  bar.classList.toggle('show', below);
+  bar.setAttribute('aria-hidden', below ? 'false' : 'true');
 }, { threshold: 0 });
 barObs.observe(panel);
 </script>
