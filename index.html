@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>iPhone 13 mini — ₹23,500</title>
-<meta name="description" content="iPhone 13 mini in excellent pre-owned condition. 128 GB, A15 Bionic, dual camera. Now ₹23,500.">
+<meta name="description" content="iPhone 13 mini in excellent pre-owned condition. 128 GB, A15 Bionic, dual camera. Now ₹23,500 with UPI payment.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
@@ -17,53 +17,75 @@
   --border:rgba(27,31,28,.12);
   --accent:#2f6b4f;
   --accent-fg:#ffffff;
+  --amber:#8a6d1d;
+  --amber-bg:rgba(138,109,29,.1);
   --radius:12px;
   --font:'Inter',system-ui,sans-serif;
   --serif:'Newsreader',Georgia,serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
 a{color:inherit}
+img{max-width:100%}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 
 /* header */
-header{position:sticky;top:0;background:rgba(239,241,237,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:10}
+header{position:sticky;top:0;background:rgba(239,241,237,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:20}
 .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
 .wordmark{font-weight:700;letter-spacing:-.02em;font-size:17px}
 .wordmark span{color:var(--accent)}
 .nav-links{display:flex;gap:24px;font-size:13.5px;color:var(--muted)}
-.nav-links a{text-decoration:none}
+.nav-links a{text-decoration:none;transition:color .15s}
 .nav-links a:hover{color:var(--text)}
+.nav-links a.active{color:var(--accent);font-weight:600}
 .nav-price{font-size:13.5px;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:5px 13px;text-decoration:none}
 
-/* hero */
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:72px 0 56px}
-.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
-h1{font-size:56px;line-height:1.04;letter-spacing:-.03em;font-weight:700}
+/* product detail */
+.pdp{display:grid;grid-template-columns:7fr 5fr;gap:44px;padding:40px 0 56px;align-items:start}
+.gallery{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px 24px;display:flex;flex-direction:column;align-items:center;position:sticky;top:84px}
+.phone-frame{width:100%;max-width:520px;overflow:hidden;border-radius:14px}
+.phone-img{width:100%;height:auto;display:block;transition:opacity .18s ease,transform .3s ease}
+.phone-frame:hover .phone-img{transform:scale(1.025)}
+.phone-img.switching{opacity:0}
+.gallery-note{margin-top:14px;font-size:12.5px;color:var(--muted)}
+
+.buy-panel{position:sticky;top:84px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chip{font-size:12px;font-weight:600;letter-spacing:.04em;padding:5px 11px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+.chip-accent{color:var(--accent);border-color:rgba(47,107,79,.4);background:rgba(47,107,79,.07)}
+.chip-amber{color:var(--amber);border-color:rgba(138,109,29,.4);background:var(--amber-bg)}
+h1{font-size:44px;line-height:1.06;letter-spacing:-.03em;font-weight:700}
 h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent)}
-.hero-sub{margin-top:18px;color:var(--muted);font-size:17px;max-width:44ch}
-.price-row{margin-top:28px;display:flex;align-items:baseline;gap:14px}
-.price{font-size:40px;font-weight:700;letter-spacing:-.02em}
-.mrp{font-size:17px;color:var(--muted);text-decoration:line-through}
+.variant-line{margin-top:8px;font-size:14px;color:var(--muted)}
+.hero-sub{margin-top:16px;color:var(--muted);font-size:15.5px;max-width:46ch}
+
+.price-block{margin-top:22px;padding:20px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.price-row{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.price{font-size:38px;font-weight:700;letter-spacing:-.02em}
+.mrp{font-size:16px;color:var(--muted);text-decoration:line-through}
 .save{font-size:12.5px;font-weight:600;color:var(--accent);background:rgba(47,107,79,.1);padding:4px 10px;border-radius:999px}
-.cta-row{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;text-decoration:none;border-radius:999px;padding:13px 26px;border:1px solid transparent;cursor:pointer}
+.price-note{margin-top:8px;font-size:13px;color:var(--muted)}
+
+.opt-label{margin-top:22px;font-size:13px;font-weight:600;letter-spacing:.02em}
+.opt-label span{font-weight:400;color:var(--muted)}
+.swatches{display:flex;gap:10px;margin-top:10px}
+.swatch{width:30px;height:30px;border-radius:50%;border:1px solid var(--border);cursor:pointer;padding:0;transition:transform .12s}
+.swatch:hover{transform:scale(1.08)}
+.swatch[aria-pressed="true"]{box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px var(--accent)}
+
+.cta-row{margin-top:26px;display:flex;flex-direction:column;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:600;text-decoration:none;border-radius:999px;padding:14px 26px;border:1px solid transparent;cursor:pointer;transition:filter .15s,border-color .15s}
 .btn-primary{background:var(--accent);color:var(--accent-fg)}
 .btn-primary:hover{filter:brightness(1.08)}
 .btn-ghost{background:transparent;color:var(--text);border-color:var(--border)}
 .btn-ghost:hover{border-color:var(--text)}
-.assurance{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
-.assurance span{display:inline-flex;align-items:center;gap:7px}
-.assurance svg{width:15px;height:15px;stroke:var(--accent)}
 
-/* phone stage */
-.stage{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:40px 24px 28px;display:flex;flex-direction:column;align-items:center}
-.phone-img{width:300px;height:auto;display:block;mix-blend-mode:multiply}
-.swatches{display:flex;gap:10px;margin-top:22px}
-.swatch{width:26px;height:26px;border-radius:50%;border:1px solid var(--border);cursor:pointer;padding:0;outline:none}
-.swatch[aria-pressed="true"]{box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px var(--accent)}
-.color-name{margin-top:10px;font-size:13px;color:var(--muted)}
+.assurance{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;font-size:13px;color:var(--muted)}
+.assurance span{display:inline-flex;align-items:center;gap:8px}
+.assurance svg{width:16px;height:16px;stroke:var(--accent);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
 /* sections */
 section{padding:44px 0;scroll-margin-top:80px}
@@ -77,9 +99,9 @@ section{padding:44px 0;scroll-margin-top:80px}
 .hl h3{font-size:15px;font-weight:600;margin-bottom:4px}
 .hl p{font-size:13px;color:var(--muted)}
 
-/* price card */
+/* deal */
 .deal{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
-.deal h2{font-size:22px;font-weight:700;letter-spacing:-.01em;margin-bottom:14px}
+.deal h2{font-size:20px;font-weight:700;letter-spacing:-.01em;margin-bottom:14px}
 .deal-lines{display:flex;flex-direction:column}
 .deal-line{display:flex;justify-content:space-between;font-size:14px;padding:10px 0;border-bottom:1px solid var(--border)}
 .deal-line:last-child{border-bottom:none;font-weight:700;font-size:16px}
@@ -94,7 +116,6 @@ section{padding:44px 0;scroll-margin-top:80px}
 .pay-qr img{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--radius)}
 .pay-steps{margin:16px 0 0 18px;font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:8px}
 .pay-steps strong{color:var(--text);font-weight:600}
-@media (max-width:900px){.pay-card{grid-template-columns:1fr}.pay-qr{max-width:320px}}
 
 /* specs */
 .specs{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
@@ -104,20 +125,33 @@ section{padding:44px 0;scroll-margin-top:80px}
 .spec-row dd{font-weight:500}
 
 /* footer */
-footer{border-top:1px solid var(--border);padding:28px 0 40px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer{border-top:1px solid var(--border);padding:28px 0 40px;font-size:13px;color:var(--muted)}
 footer a{color:var(--muted)}
 
-@media (max-width:900px){
-  .hero{grid-template-columns:1fr;padding:48px 0 40px;gap:36px}
-  h1{font-size:42px}
+/* mobile sticky buy bar */
+.buy-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid var(--border);padding:10px 16px calc(10px + env(safe-area-inset-bottom));z-index:30;align-items:center;justify-content:space-between;gap:14px;transform:translateY(110%);transition:transform .25s ease}
+.buy-bar.show{transform:translateY(0)}
+.buy-bar .bb-price{font-weight:700;font-size:18px;letter-spacing:-.01em}
+.buy-bar .bb-sub{font-size:11.5px;color:var(--muted)}
+.buy-bar .btn{padding:11px 22px;font-size:14px}
+
+@media (max-width:960px){
+  .pdp{grid-template-columns:1fr;gap:28px;padding-top:28px}
+  .gallery,.buy-panel{position:static}
+  h1{font-size:34px}
+  .price{font-size:30px}
   .highlights{grid-template-columns:repeat(2,1fr)}
   .hl:nth-child(2){border-right:none}
   .deal{grid-template-columns:1fr}
+  .pay-card{grid-template-columns:1fr}
+  .pay-qr{max-width:320px}
   .nav-links{display:none}
+  .buy-bar{display:flex}
+  body{padding-bottom:0}
+  main{padding-bottom:88px}
 }
 @media (max-width:520px){
-  h1{font-size:34px}
-  .price{font-size:32px}
+  .assurance{grid-template-columns:1fr}
   .spec-row{grid-template-columns:1fr;gap:2px}
 }
 </style>
@@ -127,45 +161,45 @@ footer a{color:var(--muted)}
 <header>
   <div class="wrap nav">
     <div class="wordmark">minimart<span>.</span></div>
-    <nav class="nav-links">
+    <nav class="nav-links" id="nav-links">
       <a href="#highlights">Highlights</a>
       <a href="#deal">Price</a>
       <a href="#specs">Specs</a>
       <a href="#pay">Pay</a>
     </nav>
-    <a class="nav-price" href="#deal">₹23,500</a>
+    <a class="nav-price" href="#pay">₹23,500</a>
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="top">
 
-  <div class="hero">
-    <div>
-      <p class="eyebrow">Pre-owned · Excellent condition</p>
-      <h1>iPhone 13 mini.<br><em>Small phone, full flagship.</em></h1>
-      <p class="hero-sub">The compact 5.4-inch powerhouse with A15 Bionic, a dual camera system and all-day battery — fully tested and ready for its next owner.</p>
-      <div class="price-row">
-        <span class="price">₹23,500</span>
-        <span class="mrp">₹69,900</span>
-        <span class="save">You save 66%</span>
+  <div class="pdp">
+    <div class="gallery">
+      <div class="phone-frame">
+        <img id="phone-img" class="phone-img" src="images/midnight.jpg" alt="iPhone 13 mini in Midnight — front and back view" width="940" height="1112" fetchpriority="high" decoding="async">
       </div>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#pay">
-          Buy now
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="btn btn-ghost" href="#specs">Full specs</a>
-      </div>
-      <div class="assurance">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Fully tested &amp; functional</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="13" height="9" rx="2"/><path d="M16 11h3l2 2v4h-5"/></svg>Fast delivery</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>7-day easy return</span>
-      </div>
+      <p class="gallery-note">Front and back view · <span id="gallery-color">Midnight</span></p>
     </div>
 
-    <div class="stage">
-      <img id="phone-img" class="phone-img" src="images/midnight.jpg" alt="iPhone 13 mini in Midnight — front and back view" width="940" height="1112" decoding="async">
+    <div class="buy-panel">
+      <div class="chips">
+        <span class="chip chip-accent">Pre-owned · Excellent</span>
+        <span class="chip chip-amber">Only 1 available</span>
+      </div>
+      <h1>iPhone 13 mini.<br><em>Small phone, full flagship.</em></h1>
+      <p class="variant-line">128 GB · Factory unlocked</p>
+      <p class="hero-sub">The compact 5.4-inch powerhouse with A15 Bionic, a dual camera system and all-day battery — fully tested and ready for its next owner.</p>
 
+      <div class="price-block">
+        <div class="price-row">
+          <span class="price">₹23,500</span>
+          <span class="mrp">₹69,900</span>
+          <span class="save">You save 66%</span>
+        </div>
+        <p class="price-note">Free delivery · One-time payment via UPI</p>
+      </div>
+
+      <p class="opt-label">Colour — <span id="color-name">Midnight</span></p>
       <div class="swatches" role="group" aria-label="Colours">
         <button class="swatch" data-img="midnight" data-name="Midnight" style="background:#43474d" aria-pressed="true" aria-label="Midnight"></button>
         <button class="swatch" data-img="starlight" data-name="Starlight" style="background:#f4ece1" aria-pressed="false" aria-label="Starlight"></button>
@@ -174,7 +208,21 @@ footer a{color:var(--muted)}
         <button class="swatch" data-img="green" data-name="Green" style="background:#394e3f" aria-pressed="false" aria-label="Green"></button>
         <button class="swatch" data-img="red" data-name="(PRODUCT)RED" style="background:#c3332f" aria-pressed="false" aria-label="Red"></button>
       </div>
-      <p class="color-name" id="color-name">Midnight · 128 GB</p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#pay">
+          Buy now — ₹23,500
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#specs">Full specifications</a>
+      </div>
+
+      <div class="assurance">
+        <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Fully tested &amp; functional</span>
+        <span><svg viewBox="0 0 24 24"><rect x="3" y="8" width="13" height="9" rx="2"/><path d="M16 11h3l2 2v4h-5"/></svg>Fast delivery</span>
+        <span><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>7-day easy return</span>
+        <span><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>Freshly reset for you</span>
+      </div>
     </div>
   </div>
 
@@ -198,7 +246,7 @@ footer a{color:var(--muted)}
         <p>Wide + Ultra Wide with Night mode, Cinematic mode and 4K Dolby Vision.</p>
       </div>
       <div class="hl">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 12l.01 0"/></svg>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>
         <h3>MagSafe &amp; 5G</h3>
         <p>Magnetic charging and accessories, plus superfast 5G downloads.</p>
       </div>
@@ -208,7 +256,7 @@ footer a{color:var(--muted)}
   <section id="deal">
     <div class="deal">
       <div>
-        <h2>The deal</h2>
+        <h2>Price breakdown</h2>
         <div class="deal-lines">
           <div class="deal-line"><span>iPhone 13 mini, 128 GB</span><span>₹23,500</span></div>
           <div class="deal-line"><span>Launch price (2021)</span><span style="text-decoration:line-through;color:var(--muted)">₹69,900</span></div>
@@ -216,9 +264,6 @@ footer a{color:var(--muted)}
           <div class="deal-line"><span>Total</span><span>₹23,500</span></div>
         </div>
         <p class="deal-note">One unit available. Battery, cameras, Face ID, buttons and ports all tested and working.</p>
-        <div class="cta-row" style="margin-top:20px">
-          <a class="btn btn-primary" href="#pay">Reserve it now</a>
-        </div>
       </div>
       <div>
         <h2>In the box</h2>
@@ -237,7 +282,7 @@ footer a{color:var(--muted)}
     <p class="sec-sub">Scan with GPay, PhonePe, Paytm or any UPI app. No fees, instant confirmation.</p>
     <div class="pay-card">
       <div class="pay-qr">
-        <img src="images/upi-qr.png" alt="UPI QR code for payment" width="480" height="480">
+        <img src="images/upi-qr.png" alt="UPI QR code for payment" width="480" height="480" loading="lazy">
       </div>
       <div class="pay-detail">
         <div class="deal-lines">
@@ -248,8 +293,8 @@ footer a{color:var(--muted)}
           <li>Enter <strong>₹23,500</strong> if the amount isn't prefilled.</li>
           <li>Confirm the payee details shown in your app, then pay.</li>
         </ol>
-        <div class="cta-row" style="margin-top:18px">
-          <a class="btn btn-primary" href="upi://pay?pa=vichured@okaxis&amp;pn=Vaishakh%20Suresh&amp;am=23500&amp;cu=INR&amp;tn=iPhone%2013%20mini">Open in UPI app</a>
+        <div class="cta-row" style="margin-top:18px;align-items:flex-start">
+          <a class="btn btn-primary" href="upi://pay?pa=vichured@okaxis&amp;pn=Vaishakh%20Suresh&amp;am=23500&amp;cu=INR&amp;tn=iPhone%2013%20mini" style="align-self:flex-start">Open in UPI app</a>
         </div>
         <p class="deal-note" style="margin-top:14px">On mobile, the button above opens your UPI app with the amount prefilled.</p>
       </div>
@@ -276,6 +321,14 @@ footer a{color:var(--muted)}
 
 </main>
 
+<div class="buy-bar" id="buy-bar" aria-hidden="true">
+  <div>
+    <div class="bb-price">₹23,500</div>
+    <div class="bb-sub">iPhone 13 mini · 128 GB</div>
+  </div>
+  <a class="btn btn-primary" href="#pay">Buy now</a>
+</div>
+
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%">
     <span>iPhone is a trademark of Apple Inc. Product images belong to Apple. This is a private resale listing.</span>
@@ -284,19 +337,52 @@ footer a{color:var(--muted)}
 </footer>
 
 <script>
+// colour picker with fade transition
 const swatches = document.querySelectorAll('.swatch');
 const img = document.getElementById('phone-img');
 const label = document.getElementById('color-name');
+const galleryColor = document.getElementById('gallery-color');
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 ['midnight','starlight','blue','pink','green','red'].forEach(c => { const i = new Image(); i.src = `images/${c}.jpg`; });
 swatches.forEach(btn => {
   btn.addEventListener('click', () => {
+    if (btn.getAttribute('aria-pressed') === 'true') return;
     swatches.forEach(b => b.setAttribute('aria-pressed', 'false'));
     btn.setAttribute('aria-pressed', 'true');
-    img.src = `images/${btn.dataset.img}.jpg`;
-    img.alt = `iPhone 13 mini in ${btn.dataset.name} — front and back view`;
-    label.textContent = btn.dataset.name + ' · 128 GB';
+    label.textContent = btn.dataset.name;
+    galleryColor.textContent = btn.dataset.name;
+    const swap = () => {
+      img.src = `images/${btn.dataset.img}.jpg`;
+      img.alt = `iPhone 13 mini in ${btn.dataset.name} — front and back view`;
+      img.classList.remove('switching');
+    };
+    if (reduceMotion) { swap(); return; }
+    img.classList.add('switching');
+    setTimeout(swap, 180);
   });
 });
+
+// scroll-spy
+const links = document.querySelectorAll('#nav-links a');
+const secs = [...links].map(a => document.querySelector(a.hash));
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(a => a.classList.toggle('active', a.hash === '#' + e.target.id));
+    }
+  });
+}, { rootMargin: '-35% 0px -55% 0px' });
+secs.forEach(s => s && spy.observe(s));
+
+// mobile sticky buy bar: show after scrolling past the buy panel CTAs
+const bar = document.getElementById('buy-bar');
+const panel = document.querySelector('.buy-panel .cta-row');
+const barObs = new IntersectionObserver(([e]) => {
+  const below = e.boundingClientRect.bottom < 0 || (!e.isIntersecting && window.scrollY > 200);
+  bar.classList.toggle('show', below && !e.isIntersecting);
+  bar.setAttribute('aria-hidden', bar.classList.contains('show') ? 'false' : 'true');
+}, { threshold: 0 });
+barObs.observe(panel);
 </script>
 </body>
 </html>
