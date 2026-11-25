@@ -59,7 +59,7 @@ h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--acc
 
 /* phone stage */
 .stage{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:40px 24px 28px;display:flex;flex-direction:column;align-items:center}
-.phone-svg{width:230px;height:auto}
+.phone-img{width:300px;height:auto;display:block;mix-blend-mode:multiply}
 .swatches{display:flex;gap:10px;margin-top:22px}
 .swatch{width:26px;height:26px;border-radius:50%;border:1px solid var(--border);cursor:pointer;padding:0;outline:none}
 .swatch[aria-pressed="true"]{box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px var(--accent)}
@@ -156,30 +156,15 @@ footer a{color:var(--muted)}
     </div>
 
     <div class="stage">
-      <svg class="phone-svg" viewBox="0 0 260 520" role="img" aria-label="iPhone 13 mini">
-        <!-- body -->
-        <rect id="phone-body" x="30" y="16" width="200" height="420" rx="42" fill="#43474d"/>
-        <rect x="36" y="22" width="188" height="408" rx="37" fill="#101214"/>
-        <!-- screen -->
-        <rect x="44" y="30" width="172" height="392" rx="30" fill="#f4f6f4"/>
-        <!-- notch -->
-        <rect x="98" y="30" width="64" height="22" rx="11" fill="#101214"/>
-        <!-- screen content -->
-        <text x="130" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="700" fill="#1b1f1c">13</text>
-        <text x="130" y="146" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="16" fill="#2f6b4f">mini</text>
-        <rect x="74" y="180" width="112" height="8" rx="4" fill="#dde2dc"/>
-        <rect x="88" y="198" width="84" height="8" rx="4" fill="#dde2dc"/>
-        <rect x="98" y="216" width="64" height="8" rx="4" fill="#dde2dc"/>
-        <rect x="100" y="250" width="60" height="26" rx="13" fill="#2f6b4f"/>
-      </svg>
+      <img id="phone-img" class="phone-img" src="images/midnight.jpg" alt="iPhone 13 mini in Midnight — front and back view" width="940" height="1112" decoding="async">
 
       <div class="swatches" role="group" aria-label="Colours">
-        <button class="swatch" data-color="#43474d" data-name="Midnight" style="background:#43474d" aria-pressed="true" aria-label="Midnight"></button>
-        <button class="swatch" data-color="#f4ece1" data-name="Starlight" style="background:#f4ece1" aria-pressed="false" aria-label="Starlight"></button>
-        <button class="swatch" data-color="#a7c1d9" data-name="Blue" style="background:#a7c1d9" aria-pressed="false" aria-label="Blue"></button>
-        <button class="swatch" data-color="#f2c8cf" data-name="Pink" style="background:#f2c8cf" aria-pressed="false" aria-label="Pink"></button>
-        <button class="swatch" data-color="#394e3f" data-name="Green" style="background:#394e3f" aria-pressed="false" aria-label="Green"></button>
-        <button class="swatch" data-color="#c3332f" data-name="(PRODUCT)RED" style="background:#c3332f" aria-pressed="false" aria-label="Red"></button>
+        <button class="swatch" data-img="midnight" data-name="Midnight" style="background:#43474d" aria-pressed="true" aria-label="Midnight"></button>
+        <button class="swatch" data-img="starlight" data-name="Starlight" style="background:#f4ece1" aria-pressed="false" aria-label="Starlight"></button>
+        <button class="swatch" data-img="blue" data-name="Blue" style="background:#a7c1d9" aria-pressed="false" aria-label="Blue"></button>
+        <button class="swatch" data-img="pink" data-name="Pink" style="background:#f2c8cf" aria-pressed="false" aria-label="Pink"></button>
+        <button class="swatch" data-img="green" data-name="Green" style="background:#394e3f" aria-pressed="false" aria-label="Green"></button>
+        <button class="swatch" data-img="red" data-name="(PRODUCT)RED" style="background:#c3332f" aria-pressed="false" aria-label="Red"></button>
       </div>
       <p class="color-name" id="color-name">Midnight · 128 GB</p>
     </div>
@@ -261,20 +246,22 @@ footer a{color:var(--muted)}
 
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%">
-    <span>iPhone is a trademark of Apple Inc. This is a private resale listing.</span>
+    <span>iPhone is a trademark of Apple Inc. Product images belong to Apple. This is a private resale listing.</span>
     <a href="https://app.devin.ai/sessions/7f6bad6f23bc443f8def70d7aefb1d34">Request changes</a>
   </div>
 </footer>
 
 <script>
 const swatches = document.querySelectorAll('.swatch');
-const body = document.getElementById('phone-body');
+const img = document.getElementById('phone-img');
 const label = document.getElementById('color-name');
+['midnight','starlight','blue','pink','green','red'].forEach(c => { const i = new Image(); i.src = `images/${c}.jpg`; });
 swatches.forEach(btn => {
   btn.addEventListener('click', () => {
     swatches.forEach(b => b.setAttribute('aria-pressed', 'false'));
     btn.setAttribute('aria-pressed', 'true');
-    body.setAttribute('fill', btn.dataset.color);
+    img.src = `images/${btn.dataset.img}.jpg`;
+    img.alt = `iPhone 13 mini in ${btn.dataset.name} — front and back view`;
     label.textContent = btn.dataset.name + ' · 128 GB';
   });
 });
