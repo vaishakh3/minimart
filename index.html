@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPhone 13 mini — ₹23,500</title>
+<meta name="description" content="iPhone 13 mini in excellent pre-owned condition. 128 GB, A15 Bionic, dual camera. Now ₹23,500.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eff1ed;
+  --surface:#ffffff;
+  --text:#1b1f1c;
+  --muted:rgba(27,31,28,.56);
+  --border:rgba(27,31,28,.12);
+  --accent:#2f6b4f;
+  --accent-fg:#ffffff;
+  --radius:12px;
+  --font:'Inter',system-ui,sans-serif;
+  --serif:'Newsreader',Georgia,serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+
+/* header */
+header{position:sticky;top:0;background:rgba(239,241,237,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.wordmark{font-weight:700;letter-spacing:-.02em;font-size:17px}
+.wordmark span{color:var(--accent)}
+.nav-links{display:flex;gap:24px;font-size:13.5px;color:var(--muted)}
+.nav-links a{text-decoration:none}
+.nav-links a:hover{color:var(--text)}
+.nav-price{font-size:13.5px;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:5px 13px;text-decoration:none}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:72px 0 56px}
+.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+h1{font-size:56px;line-height:1.04;letter-spacing:-.03em;font-weight:700}
+h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent)}
+.hero-sub{margin-top:18px;color:var(--muted);font-size:17px;max-width:44ch}
+.price-row{margin-top:28px;display:flex;align-items:baseline;gap:14px}
+.price{font-size:40px;font-weight:700;letter-spacing:-.02em}
+.mrp{font-size:17px;color:var(--muted);text-decoration:line-through}
+.save{font-size:12.5px;font-weight:600;color:var(--accent);background:rgba(47,107,79,.1);padding:4px 10px;border-radius:999px}
+.cta-row{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;text-decoration:none;border-radius:999px;padding:13px 26px;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--accent);color:var(--accent-fg)}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--border)}
+.btn-ghost:hover{border-color:var(--text)}
+.assurance{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.assurance span{display:inline-flex;align-items:center;gap:7px}
+.assurance svg{width:15px;height:15px;stroke:var(--accent)}
+
+/* phone stage */
+.stage{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:40px 24px 28px;display:flex;flex-direction:column;align-items:center}
+.phone-svg{width:230px;height:auto}
+.swatches{display:flex;gap:10px;margin-top:22px}
+.swatch{width:26px;height:26px;border-radius:50%;border:1px solid var(--border);cursor:pointer;padding:0;outline:none}
+.swatch[aria-pressed="true"]{box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px var(--accent)}
+.color-name{margin-top:10px;font-size:13px;color:var(--muted)}
+
+/* sections */
+section{padding:44px 0}
+.sec-title{font-size:26px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+.sec-sub{color:var(--muted);font-size:15px;margin-bottom:26px}
+
+.highlights{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border)}
+.hl{padding:22px 18px 22px 0;border-right:1px solid var(--border)}
+.hl:last-child{border-right:none}
+.hl svg{width:22px;height:22px;stroke:var(--accent);stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round;display:block;margin-bottom:12px}
+.hl h3{font-size:15px;font-weight:600;margin-bottom:4px}
+.hl p{font-size:13px;color:var(--muted)}
+
+/* price card */
+.deal{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.deal h2{font-size:22px;font-weight:700;letter-spacing:-.01em;margin-bottom:14px}
+.deal-lines{display:flex;flex-direction:column}
+.deal-line{display:flex;justify-content:space-between;font-size:14px;padding:10px 0;border-bottom:1px solid var(--border)}
+.deal-line:last-child{border-bottom:none;font-weight:700;font-size:16px}
+.deal-line span:last-child{font-variant-numeric:tabular-nums}
+.deal-note{font-size:13px;color:var(--muted);margin-top:14px}
+.box-list{list-style:none;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.box-list li{display:flex;gap:10px;align-items:center}
+.box-list svg{width:15px;height:15px;stroke:var(--accent);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* specs */
+.specs{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.spec-row{display:grid;grid-template-columns:220px 1fr;padding:15px 24px;border-bottom:1px solid var(--border);font-size:14px}
+.spec-row:last-child{border-bottom:none}
+.spec-row dt{color:var(--muted);font-weight:500}
+.spec-row dd{font-weight:500}
+
+/* footer */
+footer{border-top:1px solid var(--border);padding:28px 0 40px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:var(--muted)}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;padding:48px 0 40px;gap:36px}
+  h1{font-size:42px}
+  .highlights{grid-template-columns:repeat(2,1fr)}
+  .hl:nth-child(2){border-right:none}
+  .deal{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+@media (max-width:520px){
+  h1{font-size:34px}
+  .price{font-size:32px}
+  .spec-row{grid-template-columns:1fr;gap:2px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="wordmark">minimart<span>.</span></div>
+    <nav class="nav-links">
+      <a href="#highlights">Highlights</a>
+      <a href="#deal">Price</a>
+      <a href="#specs">Specs</a>
+    </nav>
+    <a class="nav-price" href="#deal">₹23,500</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Pre-owned · Excellent condition</p>
+      <h1>iPhone 13 mini.<br><em>Small phone, full flagship.</em></h1>
+      <p class="hero-sub">The compact 5.4-inch powerhouse with A15 Bionic, a dual camera system and all-day battery — fully tested and ready for its next owner.</p>
+      <div class="price-row">
+        <span class="price">₹23,500</span>
+        <span class="mrp">₹69,900</span>
+        <span class="save">You save 66%</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#deal">
+          Buy now
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#specs">Full specs</a>
+      </div>
+      <div class="assurance">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Fully tested &amp; functional</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="13" height="9" rx="2"/><path d="M16 11h3l2 2v4h-5"/></svg>Fast delivery</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>7-day easy return</span>
+      </div>
+    </div>
+
+    <div class="stage">
+      <svg class="phone-svg" viewBox="0 0 260 520" role="img" aria-label="iPhone 13 mini">
+        <!-- body -->
+        <rect id="phone-body" x="30" y="16" width="200" height="420" rx="42" fill="#43474d"/>
+        <rect x="36" y="22" width="188" height="408" rx="37" fill="#101214"/>
+        <!-- screen -->
+        <rect x="44" y="30" width="172" height="392" rx="30" fill="#f4f6f4"/>
+        <!-- notch -->
+        <rect x="98" y="30" width="64" height="22" rx="11" fill="#101214"/>
+        <!-- screen content -->
+        <text x="130" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="700" fill="#1b1f1c">13</text>
+        <text x="130" y="146" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="16" fill="#2f6b4f">mini</text>
+        <rect x="74" y="180" width="112" height="8" rx="4" fill="#dde2dc"/>
+        <rect x="88" y="198" width="84" height="8" rx="4" fill="#dde2dc"/>
+        <rect x="98" y="216" width="64" height="8" rx="4" fill="#dde2dc"/>
+        <rect x="100" y="250" width="60" height="26" rx="13" fill="#2f6b4f"/>
+        <!-- diagonal dual camera -->
+        <rect x="46" y="452" width="72" height="52" rx="16" fill="#33373c" transform="rotate(-32 82 478)"/>
+        <circle cx="66" cy="470" r="11" fill="#101214"/>
+        <circle cx="66" cy="470" r="5.5" fill="#3b4a56"/>
+        <circle cx="98" cy="488" r="11" fill="#101214"/>
+        <circle cx="98" cy="488" r="5.5" fill="#3b4a56"/>
+        <circle cx="96" cy="462" r="4" fill="#e8c96a"/>
+      </svg>
+
+      <div class="swatches" role="group" aria-label="Colours">
+        <button class="swatch" data-color="#43474d" data-name="Midnight" style="background:#43474d" aria-pressed="true" aria-label="Midnight"></button>
+        <button class="swatch" data-color="#f4ece1" data-name="Starlight" style="background:#f4ece1" aria-pressed="false" aria-label="Starlight"></button>
+        <button class="swatch" data-color="#a7c1d9" data-name="Blue" style="background:#a7c1d9" aria-pressed="false" aria-label="Blue"></button>
+        <button class="swatch" data-color="#f2c8cf" data-name="Pink" style="background:#f2c8cf" aria-pressed="false" aria-label="Pink"></button>
+        <button class="swatch" data-color="#394e3f" data-name="Green" style="background:#394e3f" aria-pressed="false" aria-label="Green"></button>
+        <button class="swatch" data-color="#c3332f" data-name="(PRODUCT)RED" style="background:#c3332f" aria-pressed="false" aria-label="Red"></button>
+      </div>
+      <p class="color-name" id="color-name">Midnight · 128 GB</p>
+    </div>
+  </div>
+
+  <section id="highlights">
+    <h2 class="sec-title">Why the mini still wins</h2>
+    <p class="sec-sub">Everything the big phones do, in a size that disappears into your pocket.</p>
+    <div class="highlights">
+      <div class="hl">
+        <svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 5h3"/></svg>
+        <h3>5.4″ Super Retina XDR</h3>
+        <p>OLED display with Ceramic Shield — compact, razor sharp.</p>
+      </div>
+      <div class="hl">
+        <svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
+        <h3>A15 Bionic</h3>
+        <p>The same chip as the iPhone 13 Pro. Fast for years to come.</p>
+      </div>
+      <div class="hl">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v2M21 12h-2"/></svg>
+        <h3>Dual 12 MP camera</h3>
+        <p>Wide + Ultra Wide with Night mode, Cinematic mode and 4K Dolby Vision.</p>
+      </div>
+      <div class="hl">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 12l.01 0"/></svg>
+        <h3>MagSafe &amp; 5G</h3>
+        <p>Magnetic charging and accessories, plus superfast 5G downloads.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="deal">
+    <div class="deal">
+      <div>
+        <h2>The deal</h2>
+        <div class="deal-lines">
+          <div class="deal-line"><span>iPhone 13 mini, 128 GB</span><span>₹23,500</span></div>
+          <div class="deal-line"><span>Launch price (2021)</span><span style="text-decoration:line-through;color:var(--muted)">₹69,900</span></div>
+          <div class="deal-line"><span>Delivery</span><span>Free</span></div>
+          <div class="deal-line"><span>Total</span><span>₹23,500</span></div>
+        </div>
+        <p class="deal-note">One unit available. Battery, cameras, Face ID, buttons and ports all tested and working.</p>
+        <div class="cta-row" style="margin-top:20px">
+          <a class="btn btn-primary" href="mailto:?subject=iPhone%2013%20mini%20%E2%80%94%20%E2%82%B923%2C500">Reserve it now</a>
+        </div>
+      </div>
+      <div>
+        <h2>In the box</h2>
+        <ul class="box-list">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>iPhone 13 mini, 128 GB</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>USB-C to Lightning cable</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Fresh screen protector, fitted</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Freshly reset — ready for your Apple ID</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="specs">
+    <h2 class="sec-title">Full specifications</h2>
+    <p class="sec-sub">Everything you need to know before you buy.</p>
+    <dl class="specs">
+      <div class="spec-row"><dt>Display</dt><dd>5.4-inch Super Retina XDR OLED, 2340×1080 at 476 ppi, HDR, True Tone</dd></div>
+      <div class="spec-row"><dt>Chip</dt><dd>A15 Bionic — 6-core CPU, 4-core GPU, 16-core Neural Engine</dd></div>
+      <div class="spec-row"><dt>Storage</dt><dd>128 GB</dd></div>
+      <div class="spec-row"><dt>Rear camera</dt><dd>Dual 12 MP Wide (ƒ/1.6) + Ultra Wide (ƒ/2.4), Night mode, Cinematic mode, 4K Dolby Vision HDR</dd></div>
+      <div class="spec-row"><dt>Front camera</dt><dd>12 MP TrueDepth with Night mode and 4K video</dd></div>
+      <div class="spec-row"><dt>Security</dt><dd>Face ID</dd></div>
+      <div class="spec-row"><dt>Connectivity</dt><dd>5G, Gigabit LTE, Wi-Fi 6, Bluetooth 5.0, NFC, Ultra Wideband</dd></div>
+      <div class="spec-row"><dt>Charging</dt><dd>MagSafe up to 15 W, Qi wireless, fast charge via Lightning (50% in ~30 min with 20 W adapter)</dd></div>
+      <div class="spec-row"><dt>Durability</dt><dd>Ceramic Shield front, IP68 water resistance (6 m for 30 min)</dd></div>
+      <div class="spec-row"><dt>Size &amp; weight</dt><dd>131.5 × 64.2 × 7.65 mm · 140 g</dd></div>
+      <div class="spec-row"><dt>Colours</dt><dd>Midnight, Starlight, Blue, Pink, Green, (PRODUCT)RED</dd></div>
+    </dl>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%">
+    <span>iPhone is a trademark of Apple Inc. This is a private resale listing.</span>
+    <a href="https://app.devin.ai/sessions/7f6bad6f23bc443f8def70d7aefb1d34">Request changes</a>
+  </div>
+</footer>
+
+<script>
+const swatches = document.querySelectorAll('.swatch');
+const body = document.getElementById('phone-body');
+const label = document.getElementById('color-name');
+swatches.forEach(btn => {
+  btn.addEventListener('click', () => {
+    swatches.forEach(b => b.setAttribute('aria-pressed', 'false'));
+    btn.setAttribute('aria-pressed', 'true');
+    body.setAttribute('fill', btn.dataset.color);
+    label.textContent = btn.dataset.name + ' · 128 GB';
+  });
+});
+</script>
+</body>
+</html>
